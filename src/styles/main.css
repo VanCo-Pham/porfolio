@@ -433,6 +433,8 @@
 }
 
 .detail-container {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,34 +539,39 @@
     -webkit-transform: translateY(20vh) !important;
             transform: translateY(20vh) !important;
   }
-  .detail-container h1 {
-    font-size: 1.5rem;
-  }
-  .detail-container p {
-    font-size: 1rem;
+  .detail-container {
+    margin-top: 20vh;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 710px) {
+  .timeline {
+    position: relative !important;
+  }
+  .detail {
+    overflow: hidden;
+  }
   .detail-picture img:first-child {
     left: 25vw;
-    top: 12rem;
+    top: 15rem;
     width: 50vw;
     background: red;
   }
   .detail-picture img:nth-child(2) {
     display: none;
   }
-}
-
-@media (max-width: 500px) {
   .detail-container {
     width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
   .detail-container:hover {
     -webkit-transform: unset !important;
             transform: unset !important;
   }
+}
+
+@media (max-width: 500px) {
   .detail-picture img:first-child {
     width: 60vw;
     left: 20vw;
@@ -575,15 +582,12 @@
   min-height: 100vh;
   width: 100%;
   margin: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
+  background: #282c35;
+  padding-top: 5rem;
 }
 
-.skills h2 {
-  color: white;
-  padding: 1rem;
+.skills-name {
+  font-size: 2rem !important;
 }
 
 .skills h1 {
@@ -643,6 +647,13 @@
   position: relative;
   background: #282c35;
   overflow: hidden;
+  padding-top: 5rem;
+}
+
+.projects h1 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 .projects span {
@@ -758,7 +769,7 @@
 }
 
 .swiper-wrap {
-  min-height: 110vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +779,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #282c35;
 }
 
 .swiper-container {
@@ -1033,7 +1043,7 @@
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 710px) {
   .timeline {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -22,10 +22,11 @@ const Detail = () => {
 				<h1 data-aos="fade-left">Hello, I’m Co Pham. Nice to meet you.</h1>
 
 				<p data-aos="fade-left">
-					I have the love of coding since I was introduced to Pascal, I started to made interesting with it.<br />
+					I have the love of coding since I was introduced to Pascal, I started to make interesting things
+					with it. <br />
 					Years later, I made a huge mistake not follow my passion and went to Biotechnology as my carrier.
-					But coding was always where my heart pointed, so I decided to follow my heart.
-					<br />I’m a self teach developer, I’ve been working with my IT skill for years, I'm a fast learner,
+					But coding was always where my heart pointed, so I decided to follow my heart. <br />
+					I’m a self teach developer, I’ve been working with my IT skill for years, I'm a fast learner,
 					self-disciplined, non-stop learning person.
 				</p>
 			</div>

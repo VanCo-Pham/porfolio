@@ -7,7 +7,12 @@
 	position: relative;
 	background: #282c35;
 	overflow: hidden;
-
+	padding-top: 5rem;
+	h1 {
+		color: white;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
 	span {
 		display: none;
 	}

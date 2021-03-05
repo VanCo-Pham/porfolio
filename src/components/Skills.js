@@ -62,7 +62,8 @@ const Skills = () => {
 		}
 	];
 	return (
-		<section className="skills" id="skills" data-aos="fade-up">
+		<section className="skills" id="skills">
+			<h1 className="skills-name">MY SKILLS</h1>
 			<div className="swiper-wrap">
 				<div className="swiper-container">
 					<div className="swiper-wrapper">

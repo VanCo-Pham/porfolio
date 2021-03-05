@@ -7,7 +7,7 @@ const Projects = () => {
 			id: 1,
 			title: 'REPORT GENERATOR',
 			description:
-				'Writen in Python, using Pyside2. Its can gather information in the website, processing, and save it in database, export nesserasy report for each day. Store importance infomation and can retriet at anytime. Fully responsive and usable.',
+				'Written in Python, using Pyside2. It can gather information on the website, processing, save it in a database, create daily reports. Store important information and able to retrieve it at any time. Fully responsive.',
 			src: '',
 			video: (
 				<iframe
@@ -15,9 +15,9 @@ const Projects = () => {
 					width="560"
 					height="315"
 					src="https://www.youtube.com/embed/1vXgsDEvtpg"
-					frameborder="0"
+					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
+					allowFullScreen
 				/>
 			),
 			reverse: false
@@ -26,7 +26,7 @@ const Projects = () => {
 			id: 2,
 			title: 'Responsive modern mini game App.',
 			description:
-				'Mini project written in Python & Pyside2. Included Caro and Tic Tac Toe mini games. Modern look, responsive and playable.',
+				'The mini project is written in Python & Pyside2. Included Caro and Tic Tac Toe mini-games. Modern look, responsive and playable.',
 			src: '',
 			video: (
 				<iframe
@@ -46,7 +46,7 @@ const Projects = () => {
 		{
 			id: 1,
 			title: 'Responsive Commercial Website Demo.',
-			description: 'Fully responsive, fetching data from api server.',
+			description: 'Fully responsive, fetching data from API server.',
 			src: project_01,
 			reverse: false,
 			image: true
@@ -54,6 +54,7 @@ const Projects = () => {
 	];
 	return (
 		<section className="projects" id="projects">
+			<h1>MY PROJECTS</h1>
 			<ProjectVideo data={projectVideo} />
 			<ProjectImg data={projectImg} />
 		</section>
