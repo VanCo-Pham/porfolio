@@ -1,0 +1,127 @@
+.detail {
+	min-height: 110vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: #282c35;
+	&-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: unset;
+		height: 80%;
+		width: 60%;
+		gap: 2rem;
+		background: rgba(39, 38, 38, 0.185);
+		border-radius: 6px;
+		transform-style: preserve-3d;
+		transform: perspective(1000px) scaleX(0.7) scaleY(0.7);
+		backdrop-filter: blur(10px);
+		padding: 1rem 2rem;
+		overflow: hidden;
+		transition: all 0.5s ease;
+		z-index: 3;
+		&:hover {
+			background: rgba(39, 38, 38, 0.9);
+			backdrop-filter: blur(40px);
+			transform: scaleX(0.9) scaleY(0.9);
+		}
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		h1 {
+			font-weight: 600;
+			color: white;
+			font-size: 2rem;
+			padding: 8px;
+			line-height: 32px;
+		}
+		p {
+			text-align: left;
+			color: white;
+			line-height: 2.25rem;
+			font-size: 1.5rem;
+			transform: translateZ(140px);
+		}
+	}
+	&-picture {
+		position: absolute;
+		top: 0;
+		left: 0;
+		img {
+			width: 20vw;
+			object-fit: contain;
+			position: absolute;
+			// transition: 1s ease;
+			// position: absolute;
+			top: 10vh;
+			&:first-child {
+				left: 10vw;
+				transform: rotateZ(-20deg);
+			}
+			&:nth-child(2) {
+				right: -90vw;
+				transform: rotateZ(20deg);
+			}
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.detail-picture img {
+		width: 25vw;
+		top: 0vh;
+		&:first-child {
+			transform: translateY(20vh) !important;
+			left: 15vw;
+		}
+		&:nth-child(2) {
+			right: -85vw !important;
+			transform: translateY(20vh) !important;
+		}
+	}
+	.detail-container {
+		h1 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.detail-picture img {
+		&:first-child {
+			// transform: translateY(20vh) !important;
+			// left: 11vw;
+			left: 25vw;
+			top: 12rem;
+			width: 50vw;
+			background: red;
+		}
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.detail-container {
+		width: 100%;
+		&:hover {
+			transform: unset !important;
+		}
+	}
+	.detail-picture img {
+		&:first-child {
+			width: 60vw;
+			left: 20vw;
+		}
+	}
+}

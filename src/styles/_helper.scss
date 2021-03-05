@@ -1,0 +1,40 @@
+// COLOR
+$primary-color: red;
+$primary-1-color: rgb(189, 107, 107);
+
+@mixin buttonStyle {
+	z-index: 5;
+	max-width: 15vw;
+	list-style-type: none;
+	color: white;
+
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 5px 12px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+
+	backdrop-filter: blur(5px);
+	transition: 0.5s;
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: pointer;
+	animation: button-appear calc(2s * var(--i)) linear 1;
+	&:hover {
+		transform: translateY(-5px);
+	}
+	&:hover::after {
+		transform: skewX(45deg) translateX(-150px);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.5);
+		transform: skewX(45deg) translateX(150px);
+		transition: 0.7s;
+	}
+}

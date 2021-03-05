@@ -1,0 +1,86 @@
+.skillCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // grid-auto-rows: 500px;
+    margin: auto;
+    .tiltEffect {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem;
+        border-radius: 5px;
+        // height: 50vh;
+        background-color: rgba(255, 255, 255, .3);  
+        // backdrop-filter: blur(5px);
+        // width: 20vw;
+        position: relative;
+        transform-style: preserve-3d;
+        transform:perspective(1000px);
+    //     background-image: url('../images/myIcon.png');
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //    background-position: bottom;
+//        box-shadow: 0 0 10px #00ff0a, 
+//        0 0 20px #00ff0a,
+//        0 0 40px #00ff0a,
+// ;    
+opacity: 0.3;
+        &:hover {
+            opacity: 1;
+        }
+        &:hover img {
+
+            transform: translateZ(40px);
+        }
+        h1 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        img {
+            object-fit: contain;
+            width: 100%;
+
+        }
+        p {
+            // position: absolute;
+            // top: 50%;
+            // left: 0;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transform: translateZ(20px);
+        }
+        .level {
+            width: 80%;
+            height: 5px;
+            border-radius: 10px;
+            background: blanchedalmond;
+            position: relative;
+            overflow: hidden;
+            &::after {
+                position: absolute;
+                left: 0;
+                content: "";
+                background: rgb(4,115,47);
+background: linear-gradient(90deg, rgba(4,115,47,1) 0%, rgba(11,255,78,1) 100%);
+                // width: calc( 1 * var(--i));
+                height: 5px;
+                border-radius: 10px 0 0 10px;
+                animation: level 8s infinite;
+            }
+        }
+    }
+}
+
+@keyframes level {
+    0%  {
+        width: 0;
+    }
+    50%, 100% {
+        width: calc( 1 * var(--i));
+    }
+}

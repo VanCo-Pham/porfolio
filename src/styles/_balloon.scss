@@ -1,0 +1,42 @@
+.balloons {
+    // height: 100vh;
+    // // width: 60vw;
+    // background: lightcoral;
+    // margin: auto;
+    // border-radius: 5px;
+    // position: relative;
+    // overflow: hidden;
+//    z-index: -1;
+    span {
+        position: absolute;
+        // background: url('../images/balloon.png');
+        // background-size: cover;
+        // background: red;
+        // mix-blend-mode: multiply;
+        color: rgb(255, 255, 255);
+        pointer-events: none;
+        padding: 1rem;
+        // height: 50px;
+        // width: 50px;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255, 0.4);
+ 
+        backdrop-filter: blur(2px);
+        // background: green;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        animation: ballonsAni 4s linear infinite;
+    }
+}
+
+@keyframes ballonsAni {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -1000%);
+        opacity:0.3;
+
+    }
+}
