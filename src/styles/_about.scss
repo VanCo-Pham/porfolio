@@ -161,3 +161,14 @@
 		display: none !important;
 	}
 }
+
+@media (max-width: 650px) {
+	.about-info {
+		h1,
+		h3 {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

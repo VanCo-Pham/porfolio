@@ -414,6 +414,13 @@
   }
 }
 
+@media (max-width: 650px) {
+  .about-info h1::after,
+  .about-info h3::after {
+    display: none;
+  }
+}
+
 .detail {
   min-height: 110vh;
   display: -webkit-box;
