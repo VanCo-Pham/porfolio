@@ -8,7 +8,7 @@ const About = () => {
 				<img src={avatar} alt="" />
 			</div>
 			<div className="about-info">
-				<h1>Front-end Developer, Python Engineer & 3D Designer</h1>
+				<h1>Front-end, Python Developer & 3D Designer</h1>
 				<h3>I design and make simple things, and just loving that.</h3>
 			</div>
 			<ul className="about-menu">
