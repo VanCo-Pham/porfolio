@@ -89,6 +89,7 @@
 
 .menu .body-menu li {
   top: -60px;
+  right: -60px;
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(5px);
