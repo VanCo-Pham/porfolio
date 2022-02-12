@@ -8,8 +8,8 @@ const About = () => {
 				<img src={avatar} alt="" />
 			</div>
 			<div className="about-info">
-				<h1>Front-end, Python Developer & 3D Designer</h1>
-				<h3>I design and make simple things, and just loving that.</h3>
+				<h1>Front-end, Game Developer & 3D, VFX Designer</h1>
+				<h3>I design and make interesting things, and just loving that.</h3>
 			</div>
 			<ul className="about-menu">
 				<Link to="intros" spy={true} smooth={true}>

@@ -34,6 +34,17 @@ const Timeline = () => {
 					<p>Quality Assurance at Rentokil VN.</p>
 				</div>
 			</div>
+			<div
+				data-aos="zoom-in-left"
+				data-aos-delay="3000"
+				className="timeline-container down swing-bottom-fwd"
+				style={{ '--p': 3 }}
+			>
+				<div className="timeline-content">
+					<h2>2020 - 2021</h2>
+					<p>Freelancer</p>
+				</div>
+			</div>
 		</section>
 	);
 };

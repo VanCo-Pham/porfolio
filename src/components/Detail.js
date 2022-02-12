@@ -26,8 +26,8 @@ const Detail = () => {
 					with it. <br />
 					Years later, I made a huge mistake not follow my passion and went to Biotechnology as my carrier.
 					But coding was always where my heart pointed, so I decided to follow my heart. <br />
-					I’m a self teach developer, I’ve been working with my IT skill for years, I'm a fast learner,
-					self-disciplined, non-stop learning person.
+					I’m a self teach developer, I’ve been working with my IT skill for years and focus on: Game Developer, VFX, 3D, Front-end.<br/>
+					Fast learner, self-disciplined, non-stop learning person is who I am.
 				</p>
 			</div>
 			<div className="detail-picture" data-aos="fade-up">

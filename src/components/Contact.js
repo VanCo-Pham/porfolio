@@ -22,7 +22,7 @@ const Contact = () => {
 
 				<h2 data-aos="fade-left">CO PHAM</h2>
 				<p data-aos="fade-up">
-					Front-end Developer <br />Da Nang, Viet Nam
+					Game Developer <br />Da Nang, Viet Nam
 				</p>
 
 				<div className="contact-card-icons">

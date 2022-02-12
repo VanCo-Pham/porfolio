@@ -1,7 +1,9 @@
 import pic_01 from '../images/cssBattle.png';
 import pic_03 from '../images/logo512.png';
 import pic_02 from '../images/js.png';
-import python from '../images/python.png';
+// import python from '../images/python.png';
+import unity from '../images/unity.png';
+
 import blender from '../images/blender.png';
 import sass from '../images/sass.png';
 
@@ -22,35 +24,35 @@ const Skills = () => {
 			name: 'HTML & CSS',
 			level: '95%',
 			src: pic_01,
-			description: 'Proficient. Top 100 on cssbattle.dev',
+			description: 'Top 100 on cssbattle.dev',
 			link: 'https://cssbattle.dev/player/copham'
 		},
 		{
 			name: 'JavaScript',
 			level: '80%',
 			src: pic_02,
-			description: 'Competent. Expecially in making animation.',
+			description: 'Expecially in making animation.',
 			link: 'https://cssbattle.dev/player/copham'
 		},
 		{
 			name: 'React',
 			level: '80%',
 			src: pic_03,
-			description: 'Competent. Love making reused components.',
+			description: 'Love making reused components.',
 			link: 'https://cssbattle.dev/player/copham'
 		},
 		{
-			name: 'Python',
+			name: 'Unity',
 			level: '80%',
-			src: python,
-			description: 'Proficient. Two star coder on Leetcode.com',
+			src: unity,
+			description: 'Two years experiences.',
 			link: 'https://cssbattle.dev/player/copham'
 		},
 		{
 			name: 'Blender',
 			level: '70%',
 			src: blender,
-			description: 'Proficient. Two years in 3D modeling.',
+			description: 'Three years in 3D modeling.',
 			link: 'https://cssbattle.dev/player/copham'
 		},
 		{
@@ -71,7 +73,7 @@ const Skills = () => {
 							<div className="swiper-slide" key={skill.src}>
 								<div className="cards">
 									<h1>{skill.name}</h1>
-									<span className="level" style={{ '--i': skill.level }} />
+									{/* <span className="level" style={{ '--i': skill.level }} /> */}
 									<img src={skill.src} alt="" />
 									<p>{skill.description}</p>
 								</div>

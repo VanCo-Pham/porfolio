@@ -8,7 +8,7 @@ const ProjectVideo = ({data}) => {
             <article className="project" key={project.id} data-aos="flip-left">
                 <span> {count += 1}</span>
             {
-                count % 2 === 0 ? (
+                count % 2 === 0 ?(
                     <>
                     <div className="project-description" >
                         <h2>{project.title}</h2>
